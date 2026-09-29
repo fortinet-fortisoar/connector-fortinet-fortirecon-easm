@@ -1438,14 +1438,6 @@
             "id": "",
             "ip_address": "",
             "nameserver": [],
-            "discovery_path": [
-              {
-                "from":"",
-                "type": "",
-                "module": "",
-                "from_type": ""
-              }
-            ],
             "original_ip": [],
             "ports": [],
             "ssl_cert_org": "",
@@ -1865,23 +1857,6 @@
         "tags": [
           {
             "id": "",
-            "ip_prefix": "",
-            "asset": "",
-            "ports": [],
-            "cloud_metadata": {},
-            "fgt_metadata": {},
-            "discovery_path": [
-              {
-                "from": ",",
-                "from_type": "",
-                "module": "",
-                "type": ""
-              }
-            ],
-            "assets_linked_count": "",
-            "version": "",
-            "created_ts": "",
-            "modified_ts": ""
             "name": ""
           }
         ],

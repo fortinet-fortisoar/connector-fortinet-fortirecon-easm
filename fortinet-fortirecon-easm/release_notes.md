@@ -2,9 +2,8 @@
 
 - Added below actions
     - Add Issue Comments
+    - Assign Tag
+    - UnAssign Tag
 
 - Added a new query parameter `Tags Not In` in the action `Get Issues Discovered`
 - Added new response parameters `OS`,  `CPE`, `Recon Score` and  `NVD Score` in the action `Get Issues Discovered`
-- Added following actions. :
-    - Assign Tag
-    - UnAssign Tag
