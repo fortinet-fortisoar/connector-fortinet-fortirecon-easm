@@ -6,9 +6,9 @@
   "contributor": "Ramkrushna Pathade",
   "cs_approved": true,
   "cs_compatible": true,
-  "version": "1.2.1",
+  "version": "1.2.2",
   "category": "Attack Surface Management",
-  "help_online": "https://docs.fortinet.com/document/fortisoar/1.2.1/fortinet-fortirecon-easm/121/fortinet-fortirecon-easm-v1-2-1",
+  "help_online": "https://docs.fortinet.com/document/fortisoar/1.2.2/fortinet-fortirecon-easm/122/fortinet-fortirecon-easm-v1-2-2",
   "icon_small_name": "small.png",
   "icon_large_name": "large.png",
   "configuration": {
@@ -1438,6 +1438,14 @@
             "id": "",
             "ip_address": "",
             "nameserver": [],
+            "discovery_path": [
+              {
+                "from":"",
+                "type": "",
+                "module": "",
+                "from_type": ""
+              }
+            ],
             "original_ip": [],
             "ports": [],
             "ssl_cert_org": "",
@@ -1852,19 +1860,10 @@
         "page": "",
         "size": "",
         "hits": [
+         {
+        "id": "",
+        "tags": [
           {
-            "tags": [
-              {
-                "id": "",
-                "name": ""
-              }
-            ],
-            "groups": [
-              {
-                "id": "",
-                "name": ""
-              }
-            ],
             "id": "",
             "ip_prefix": "",
             "asset": "",
@@ -1883,8 +1882,35 @@
             "version": "",
             "created_ts": "",
             "modified_ts": ""
+            "name": ""
           }
-        ]
+        ],
+        "asset": "",
+        "ports": [],
+        "groups": [
+          {
+            "id": "",
+            "name": ""
+          }
+        ],
+        "version": "",
+        "ip_prefix": null,
+        "created_ts": "",
+        "modified_ts": "",
+        "fgt_metadata": {},
+        "cloud_metadata": {},
+        "discovery_path": [
+          {
+            "from": "",
+            "type": "",
+            "module": "",
+            "from_type": ""
+          }
+        ],
+        "assets_linked_count": ""
+      }
+
+    ]
       },
       "parameters": [
         {
@@ -2842,7 +2868,7 @@
         ],
         "asset": "",
         "ports": [],
-         "groups": [
+        "groups": [
           {
             "id": "",
             "name": ""
@@ -3892,6 +3918,42 @@
           "placeholder": "Minimum permissible value is 0 and maximum is 500.",
           "tooltip": "Specify the maximum number of records that this operation should return for the specified page. By default, this operation retrieves 10 records.",
           "description": "(Optional) Specify the maximum number of records that this operation should return for the specified page. By default, this operation retrieves 10 records. Minimum permissible value is 0 and maximum is 500."
+        }
+      ]
+    },
+    {
+      "operation": "add_issue_comments",
+      "title": "Add Issue Comments",
+      "annotation": "add_issue_comments",
+      "description": "Add notes or comments to a security issue using its ID.",
+      "category": "investigation",
+      "is_config_required": true,
+      "visible": true,
+      "enabled": true,
+      "output_schema": {
+        "success": "",
+        "message": ""
+      },
+      "parameters": [
+        {
+          "title": "Issue ID",
+          "name": "issue_id",
+          "type": "text",
+          "editable": true,
+          "visible": true,
+          "required": true,
+          "tooltip": "Specify the ID of the issue whose comment to be added.",
+          "description": "Specify the ID of the issue whose comment to be added."
+        },
+        {
+          "title": "Text",
+          "name": "text",
+          "type": "text",
+          "editable": true,
+          "visible": true,
+          "required": true,
+          "tooltip": "Comment note for specified issue ID. Maximum allowed character for comment is 1000.",
+          "description": "Comment note for specified issue ID. Maximum allowed character for comment is 1000."
         }
       ]
     },
