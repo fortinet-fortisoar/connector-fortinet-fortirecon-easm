@@ -4,8 +4,8 @@ MIT License
 Copyright (c) 2026 Fortinet Inc
 Copyright end
 """
-import json
 
+import json
 import requests
 from datetime import datetime
 from connectors.core.connector import get_logger, ConnectorError
